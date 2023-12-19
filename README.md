@@ -16,8 +16,8 @@ https://github.com/realbigws/TGT_Package
 4- for properties prediction such as SS and RSA, PSSM, PSFM, and ... use:
 
 https://github.com/realbigws/Predict_Property
-
-after doing these steps you can use gathering.py file to combine all extract features to each other and save them as torsion.npy, atomic_coordinate.npy, ddg.npy, sequential.npy, and sequence_name.npy.
+# final feature generation
+after doing these steps you can use read_feature.py and feature_generation.py file to combine all extract features to each other and save them as torsion.npy, atomic_coordinate.npy, ddg.npy, sequential.npy, and sequence_name.npy.
 
 # Model traning: 
 
