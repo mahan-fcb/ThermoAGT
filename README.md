@@ -3,6 +3,10 @@
 
 All datasets used in this study are available in Data folder. all required information about PDB IDs, DGG, and mutation sites are provided. For the wild type structures, you can download directly from the Protein Data Bank. However, for mutant structures you can use procedure provided in the manuscript. you can use FoldX lagorithm to generate and relax mutant structures by using their wild type structures as templates.
 
+Easy procedure for using Foldx for mutant structure generation and relaxation are provided here:
+
+https://github.com/shahpr/contingency_entrenchment
+
 # Feature extractions from PDBs:
 
 1- 6 atomic distances and 10 atomic orientions can be derived from PDBs.py file. you need to feed pdb to this py file and then extract these features
