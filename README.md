@@ -7,7 +7,7 @@ All datasets used in this study are available in Data folder. all required infor
 
 1- 6 atomic distances and 10 atomic orientions can be derived from PDBs.py file. you need to feed pdb to this py file and then extract these features
 
-2- physiochemical properties derived from either sequences or PDBs can be extracted from from Physio.py. 
+2- physiochemical properties derived from either sequences or PDBs can be extracted from from sequential1.py. 
 
 3- To extract MSA and coevolitionary features. please use the following software:
 
@@ -21,9 +21,9 @@ after doing these steps you can use read_feature.py and feature_generation.py fi
 
 # Model traning: 
 
-model.py is provided all model architectures and data loaders. you can train your model from strach by using this command: python train.py
+Thermal_train.py is provided all model architectures and data loaders. you can train your model from strach by using this command: python Thermal_train.py. please note that you need to geenrate training data and chnage the names of npy files in the Thermal_train.py based on your generated data.
 
-your model is saved in the MODEL directory. and you can test your data using this command: python test.py
+Thermal_test.py is provided all saved models and data loaders. you can test your model by using this command: python Thermal_test.py. please note that you need to geenrate test data and chnage the names of npy files in the Thermal_test.py based on your generated data.
 
 # python3.9
 
