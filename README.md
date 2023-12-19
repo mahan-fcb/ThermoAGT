@@ -1,7 +1,7 @@
 # ThermoAGT
 # Data preparation:
 
-All datasets used in this study are available in Data folder. Because of size of datasets, links for downloading them are available.
+All datasets used in this study are available in Data folder. all required information about PDB IDs, DGG, and mutation sites are provided. For the wild type structures, you can download directly from the Protein Data Bank. However, for mutant structures you can use procedure provided in the manuscript. you can use FoldX lagorithm to generate and relax mutant structures by using their wild type structures as templates.
 
 # Feature extractions from PDBs:
 
