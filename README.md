@@ -1,0 +1,20 @@
+# ThermoAGT
+Data preparation:
+All datasets used in this study are available in Data folder. Because of size of datasets, links for downloading them are available.
+Feature extractions from PDBs:
+1- 6 atomic distances and 10 atomic orientions can be derived from PDBs.py file. you need to feed pdb to this py file and then extract these features
+2- physiochemical properties derived from either sequences or PDBs can be extracted from from Physio.py. 
+3- To extract MSA and coevolitionary features. please use the following software:
+https://github.com/realbigws/TGT_Package
+4- for properties prediction such as SS and RSA, PSSM, PSFM, and ... use:
+https://github.com/realbigws/Predict_Property
+after doing these steps you can use gathering.py file to combine all extract features to each other and save them as torsion.npy, atomic_coordinate.npy, ddg.npy, sequential.npy, and sequence_name.npy.
+Model traning: model.py is provided all model architectures and data loaders. you can train your model from strach by using this command: python train.py
+your model is saved in the MODEL directory. and you can test your data using this command: python test.py
+
+Required library:
+Pytorch geometric 
+pyTorch
+Quntiport
+biopython
+
