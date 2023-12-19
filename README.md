@@ -25,13 +25,42 @@ model.py is provided all model architectures and data loaders. you can train you
 
 your model is saved in the MODEL directory. and you can test your data using this command: python test.py
 
-Required library:
+python3.9
+
+pytorch2.1
+
+numpy
+
+matplotlib
+
+pickle
 
 Pytorch geometric 
-
-pyTorch
 
 Quntiport
 
 biopython
+
+Other packages:
+
+Other packages:
+
+alnstats
+
+fasta2aln
+
+Loadhmm
+
+CCMpred
+
+TGT_Package
+
+Predict_Property
+
+hh-suite
+
+Install python environment:
+
+# CUDA 10.2
+conda install pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.2 -c pytorch
 
