@@ -9,30 +9,53 @@ https://github.com/shahpr/contingency_entrenchment
 
 # Feature extractions from PDBs:
 
-1- 6 atomic distances and 10 atomic orientions can be derived from PDBs.py file. you need to feed pdb to this py file and then extract these features
+# Deriving Atomic Distances and Orientations from PDBs:
 
-2- Physiochemical properties derived from either sequences or PDBs can be extracted from from sequential1.py. 
+Utilize the PDBs.py file to extract six atomic distances and ten atomic orientations.
 
-3- To extract MSA and coevolitionary features. please use the following software:
+Feed the PDB file into this Python script to obtain these features.
+
+# Extraction of Physiochemical Properties:
+
+For physiochemical properties, use the sequential1.py script.
+
+Extract physiochemical properties either from sequences or PDB files.
+
+# MSA and Coevolutionary Features Extraction:
+
+Employ the following software to extract MSA (Multiple Sequence Alignment) and coevolutionary features.
 
 https://github.com/realbigws/TGT_Package
 
-4- For properties prediction such as SS and RSA, PSSM, PSFM, and ... use:
+For properties prediction such as SS and RSA, PSSM, PSFM, and ... use:
 
 https://github.com/realbigws/Predict_Property
 # Final feature generation
-After doing these steps you can use read_feature.py and feature_generation.py file to combine all extract features to each other and save them as torsion.npy, atomic_coordinate.npy, ddg.npy, sequential.npy, and sequence_name.npy. 
+After completing the aforementioned steps, the next phase involves combining all extracted features using the read_feature.py and feature_generation.py files. The resulting combined features can be saved as torsion.npy, atomic_coordinate.npy, ddg.npy, sequential.npy, and sequence_name.npy.
 
 # contact map prediction for edges generation in sequence-based models:
-In structure-based model, you can use pairwise distances between beta carbon as edges. However, for seuqence-based models, you need to predict contact map (pairwise distances) to be used as edges. For contact map prediciton, you can use our recent model, CGAN-Cmap here:
+In a structure-based model, pairwise distances between beta carbons serve as edges. However, for sequence-based models, the prediction of contact maps (pairwise distances) is necessary for edge formation. To accomplish contact map prediction, our recent model, CGAN-Cmap, can be employed. Find the model here:
 
 https://github.com/mahan-fcb/CGAN-Cmap-A-protein-contact-map-predictor
 
 # Model traning: 
 
-Thermal_train.py is provided all model architectures and data loaders. you can train your model from strach by using this command: python Thermal_train.py. please note that you need to geenrate training data and chnage the names of npy files in the Thermal_train.py based on your generated data.
 
-Thermal_test.py is provided all saved models and data loaders. you can test your model by using this command: python Thermal_test.py. please note that you need to geenrate test data and chnage the names of npy files in the Thermal_test.py based on your generated data.
+# Training Your Model:
+
+To train your model from scratch, use the provided Thermal_train.py script, which contains all model architectures and data loaders.
+
+Execute the training command: python Thermal_train.py.
+
+Ensure you generate the required training data and update the names of the .npy files in Thermal_train.py according to your specific dataset.
+
+# Testing Your Model:
+
+For testing your model, utilize the Thermal_test.py script, which includes saved models and data loaders.
+
+Execute the testing command: python Thermal_test.py.
+
+Make sure to generate the necessary test data and update the names of the .npy files in Thermal_test.py based on your specific dataset.
 
 # python3.9
 
