@@ -21,7 +21,7 @@ https://github.com/realbigws/TGT_Package
 
 https://github.com/realbigws/Predict_Property
 # Final feature generation
-after doing these steps you can use read_feature.py and feature_generation.py file to combine all extract features to each other and save them as torsion.npy, atomic_coordinate.npy, ddg.npy, sequential.npy, and sequence_name.npy. 
+After doing these steps you can use read_feature.py and feature_generation.py file to combine all extract features to each other and save them as torsion.npy, atomic_coordinate.npy, ddg.npy, sequential.npy, and sequence_name.npy. 
 
 # contact map prediction for edges generation in sequence-based models:
 In structure-based model, you can use pairwise distances between beta carbon as edges. However, for seuqence-based models, you need to predict contact map (pairwise distances) to be used as edges. For contact map prediciton, you can use our recent model, CGAN-Cmap here:
