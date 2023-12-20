@@ -3,7 +3,7 @@
 
 All datasets utilized in this study are accessible in the 'Data' folder. All necessary information regarding PDB IDs, DGG, and mutation sites is provided. Wild-type structures can be directly downloaded from the Protein Data Bank. However, for mutant structures, the procedure outlined in the manuscript should be followed. The FoldX algorithm can be employed to generate and relax mutant structures, utilizing their corresponding wild-type structures as templates
 
-Easy procedure for using Foldx for mutant structure generation and relaxation are provided here:
+Here is a simplified procedure for utilizing FoldX for the generation and relaxation of mutant structures:
 
 https://github.com/shahpr/contingency_entrenchment
 
