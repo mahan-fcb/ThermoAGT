@@ -11,16 +11,16 @@ https://github.com/shahpr/contingency_entrenchment
 
 1- 6 atomic distances and 10 atomic orientions can be derived from PDBs.py file. you need to feed pdb to this py file and then extract these features
 
-2- physiochemical properties derived from either sequences or PDBs can be extracted from from sequential1.py. 
+2- Physiochemical properties derived from either sequences or PDBs can be extracted from from sequential1.py. 
 
 3- To extract MSA and coevolitionary features. please use the following software:
 
 https://github.com/realbigws/TGT_Package
 
-4- for properties prediction such as SS and RSA, PSSM, PSFM, and ... use:
+4- For properties prediction such as SS and RSA, PSSM, PSFM, and ... use:
 
 https://github.com/realbigws/Predict_Property
-# final feature generation
+# Final feature generation
 after doing these steps you can use read_feature.py and feature_generation.py file to combine all extract features to each other and save them as torsion.npy, atomic_coordinate.npy, ddg.npy, sequential.npy, and sequence_name.npy. 
 
 # contact map prediction for edges generation in sequence-based models:
