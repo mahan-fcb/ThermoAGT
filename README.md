@@ -33,7 +33,7 @@ https://github.com/realbigws/Predict_Property
 # Final feature generation
 After completing the aforementioned steps, the next phase involves combining all extracted features using the read_feature.py and feature_generation.py files. The resulting combined features can be saved as torsion.npy, atomic_coordinate.npy, ddg.npy, sequential.npy, and sequence_name.npy.
 
-# contact map prediction for edges generation in sequence-based models:
+# Contact map prediction for edges generation in sequence-based models:
 In a structure-based model, pairwise distances between beta carbons serve as edges. However, for sequence-based models, the prediction of contact maps (pairwise distances) is necessary for edge formation. To accomplish contact map prediction, our recent model, CGAN-Cmap, can be employed. Find the model here:
 
 https://github.com/mahan-fcb/CGAN-Cmap-A-protein-contact-map-predictor
