@@ -1,7 +1,7 @@
 # ThermoAGT
 # Data preparation:
 
-All datasets used in this study are available in Data folder. all required information about PDB IDs, DGG, and mutation sites are provided. For the wild type structures, you can download directly from the Protein Data Bank. However, for mutant structures you can use procedure provided in the manuscript. you can use FoldX lagorithm to generate and relax mutant structures by using their wild type structures as templates.
+All datasets utilized in this study are accessible in the 'Data' folder. All necessary information regarding PDB IDs, DGG, and mutation sites is provided. Wild-type structures can be directly downloaded from the Protein Data Bank. However, for mutant structures, the procedure outlined in the manuscript should be followed. The FoldX algorithm can be employed to generate and relax mutant structures, utilizing their corresponding wild-type structures as templates
 
 Easy procedure for using Foldx for mutant structure generation and relaxation are provided here:
 
