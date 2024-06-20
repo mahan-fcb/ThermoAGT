@@ -90,10 +90,10 @@ class AGATLayer(MessagePassing):
     def update(self, aggr_out):
         return aggr_out.mean(dim=0) + (self.bias if self.bias is not None else 0)
 
-# Define CrysCo
-class CrysCo(torch.nn.Module):
+# Define model
+class ThermoAGTGA(torch.nn.Module):
     def __init__(self, out_dims=64, heads=4, pool="global_add_pool", pool_order="early", batch_norm="True", batch_track_stats="True", act="softplus", dropout_rate=0.0, pre_fc_count=1):
-        super(CrysCo, self).__init__()
+        super(ThermoAGTGA, self).__init__()
         self.batch_track_stats = batch_track_stats == "True"
         self.batch_norm = batch_norm == "True"
         self.pool = pool
