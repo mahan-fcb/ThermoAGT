@@ -2,7 +2,7 @@ import torch
 import pickle
 import pandas as pd
 from torch_geometric.data import Data, DataLoader
-from model import CrysCo  # Ensure this is the correct path to your model definition
+from model import ThermoAGTGA  # Ensure this is the correct path to your model definition
 import torch.optim as optim
 from scipy.stats import pearsonr
 from sklearn.metrics import mean_squared_error
@@ -15,7 +15,7 @@ checkpoint_path = 'best_model_thermo_seq.pth'
 checkpoint = torch.load(checkpoint_path)
 
 # Initialize the model
-model = CrysCo().to(device)
+model = ThermoAGTGA().to(device)
 
 # Initialize the optimizer
 optimizer = optim.AdamW(model.parameters(), lr=0.0001, weight_decay=1e-5)
