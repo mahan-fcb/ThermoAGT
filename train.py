@@ -4,7 +4,7 @@ from torch import nn
 import torch.optim as optim
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 import time
-from model import CrysCo
+from model import ThermoAGTGA
 from data_loader import prepare_data
 
 # Load data
@@ -12,7 +12,7 @@ train_loader, val_loader = prepare_data('data_s2648.pkl')
 
 # Training Loop
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-model = CrysCo().to(device)
+model = ThermoAGTGA().to(device)
 optimizer = optim.AdamW(model.parameters(), lr=0.01)
 scheduler = ReduceLROnPlateau(optimizer, mode='min', factor=0.8, patience=20, min_lr=0.00001, threshold=0.0002)
 criterion = torch.nn.L1Loss()
