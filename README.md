@@ -11,16 +11,15 @@ all generated pdbs are provided in the zenodo link
 
 # Deriving Atomic Distances and Orientations from PDBs:
 
-For structure-based model, you need to extract distance between Ca atoms and all angles (provided in dist_angl.py)
+For structure-based model, you need to extract distance between Ca atoms and all angles 
 For sequence-based model, you need to use predict disnatcne and contact map. 
 
 # Extraction of Physiochemical Properties:
 
-For physiochemical properties, use the properties.py script.
 you need to use DSSP to extract SS and SASA for structures
 you need to use BLAST+ or hhblits for MSA and pssm calculations.
 
-Extract physiochemical properties either from sequences or PDB files.
+Extract physiochemical properties either from sequences or PDB files are provided in the codes.
 
 # MSA and Coevolutionary Features Extraction for sequences:
 
@@ -37,28 +36,15 @@ In a structure-based model, pairwise distances between beta carbons serve as edg
 https://github.com/mahan-fcb/CGAN-Cmap-A-protein-contact-map-predictor
 
 # Final feature generation
-After completing the aforementioned steps, the next phase involves combining all extracted features using the graph_generation.py and feature_preprocessing.py. 
+After completing the aforementioned steps, the next phase involves combining all extracted features using the graph_gen.py, feature_gen.py, and combining_features_to_graph.py
 
 
 
 # Model traning: 
 
-
-# Training Your Model:
-
-To train your model from scratch, use the provided Thermal_train.py script, which contains all model architectures and data loaders.
-
-Execute the training command: python Thermal_train.py.
-
-Ensure you generate the required training data and update the names of the .npy files in Thermal_train.py according to your specific dataset.
-
-# Testing Your Model:
-
-For testing your model, utilize the Thermal_test.py script, which includes saved models and data loaders.
-
-Execute the testing command: python Thermal_test.py.
-
-Make sure to generate the necessary test data and update the names of the .npy files in Thermal_test.py based on your specific dataset.
+After generation of graphs (graph for whole chain), to train and test the model please use the train.py and prediction.py
 
 please note that in newest version, we build graph for whole chain. 
+
+If you have any questions please contact me: mohammad.madani@uconn.edu
 
