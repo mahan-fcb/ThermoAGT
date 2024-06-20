@@ -6,12 +6,12 @@ import pickle
 import numpy as np
 from scipy.stats import pearsonr
 from sklearn.metrics import mean_squared_error
-from model import CrysCo  # Ensure this is the correct path to your model definition
+from model import ThermoAGTGA  # Ensure this is the correct path to your model definition
 
 # Load the best saved model
 def load_model(model_path):
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    model = CrysCo().to(device)
+    model = ThermoAGTGA().to(device)
     optimizer = torch.optim.AdamW(model.parameters(), lr=0.01)
     checkpoint = torch.load(model_path)
     model.load_state_dict(checkpoint['model_state_dict'])
