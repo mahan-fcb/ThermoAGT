@@ -44,7 +44,7 @@ After completing the aforementioned steps, the next phase involves combining all
 
 After generation of graphs (graph for whole chain), to train and test the model please use the train.py and prediction.py
 
-please note that in newest version, we build graph for whole chain and we updated codes.
+please note that in newest version, we build graph for whole chain and we updated codes. Then, in the final step, you can extract 11 residue graphs for mutation sites (SubGraph_extraction.py code). 
 
 If you have any questions please contact me: mohammad.madani@uconn.edu
 
